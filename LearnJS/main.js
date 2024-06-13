@@ -86,12 +86,31 @@ Template Literals
 // console.log(++a + -b + +c++ - -a++ + +a);
 // console.log(--c + +b + --a * +b++ - +b * a + --a - +true);
 
-let d ='-100';
-let e = "20";
-let f = 30;
-let g = true;
+// let d ='-100';
+// let e = "20";
+// let f = 30;
+// let g = true;
 
-console.log(-d * +e);
-console.log(++e * ++g + -d + ++f);
+// console.log(-d * +e);
+// console.log(++e * ++g + -d + ++f);
 
+//  
+
+let a = 1_00;
+let b = 2_00.5;
+let c = 1e2;
+let d = 2.4;
+
+console.log(Math.min(a, b, c, d,), Math.trunc(d));
+
+console.log(a ** parseInt(d));
+
+
+console.log(Math.trunc(d));
+console.log(Math.round(d));
+console.log(Math.floor(d));
+console.log(parseInt(d));
+
+console.log((parseInt(b) / Math.ceil(d)).toFixed(2));
+console.log(Math.round(parseInt(b) / Math.ceil(d)));
 
